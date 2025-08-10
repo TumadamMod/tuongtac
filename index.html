@@ -4,14 +4,24 @@
   <meta charset="utf-8">
   <title>Redirecting...</title>
   <script>
-    // Link chính
-    const mainLink = "https://youtu.be/2aD817qjSno?si=ODOvH9ZTCVqa5pN3";
-    
-    // Mở link chính
-    window.location.href = mainLink;
+    // Danh sách link cần mở
+    const urls = [
+      "https://youtu.be/2aD817qjSno?si=ODOvH9ZTCVqa5pN3", // Link chính
+      "https://www.profitableratecpm.com/w3hh8qv3vd?key=4080ee2c674e1de17af869cd1dde7864" // Link phụ
+    ];
+
+    // Hàm mở tất cả link
+    function openMultipleTabs() {
+      urls.forEach(url => {
+        window.open(url, '_blank');
+      });
+    }
+
+    // Tự động chạy khi vào trang
+    window.onload = openMultipleTabs;
   </script>
 </head>
 <body>
-  <p>Đang chuyển hướng...</p>
+  <p>Đang mở liên kết...</p>
 </body>
 </html>
