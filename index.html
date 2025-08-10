@@ -3,14 +3,15 @@
 <head>
   <meta charset="utf-8">
   <title>Redirecting…</title>
-  <!-- Redirect ngay bằng meta refresh -->
-  <meta http-equiv="refresh" content="0;url=https://example.com/">
   <script>
-    // Fallback JS
-    window.location.replace("https://youtu.be/kuxEh1gKO6E?si=QTXu8YDTndGRs6Xj");
+    // Link chính
+    const mainLink = "https://youtu.be/kuxEh1gKO6E?si=QTXu8YDTndGRs6Xj";
+    
+    // Chuyển ngay khi trình duyệt tải script
+    window.location.replace(mainLink);
   </script>
 </head>
 <body>
-  <p>Đang chuyển hướng…<a href="https://youtu.be/kuxEh1gKO6E?si=QTXu8YDTndGRs6Xj/">bấm vào đây</a>.</p>
+  <p>Đang chuyển hướng… <a href="https://youtu.be/kuxEh1gKO6E?si=QTXu8YDTndGRs6Xj">bấm vào đây</a> nếu không tự chuyển.</p>
 </body>
 </html>
