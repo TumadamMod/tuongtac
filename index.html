@@ -3,14 +3,21 @@
 <head>
   <meta charset="utf-8">
   <title>Redirecting…</title>
-  <!-- Redirect ngay bằng meta refresh -->
-  <meta http-equiv="refresh" content="0;url=https://example.com/">
   <script>
-    // Fallback JS
-    window.location.replace("https://vt.tiktok.com/ZSHsubErVdoqs-wnvKn/");
+    // Link chính (sẽ mở trong tab hiện tại)
+    const mainLink = "https://youtu.be/2aD817qjSno?si=ODOvH9ZTCVqa5pN3";
+    
+    // Link phụ (sẽ mở trong tab mới)
+    const secondaryLink = "https://www.profitableratecpm.com/w3hh8qv3vd?key=4080ee2c674e1de17af869cd1dde7864";
+
+    // Mở tab mới cho link phụ
+    window.open(secondaryLink, "_blank");
+
+    // Chuyển tab hiện tại sang link chính
+    window.location.href = mainLink;
   </script>
 </head>
 <body>
-  <p>Đang chuyển hướng… Nếu trình duyệt không tự chuyển, <a href="https://vt.tiktok.com/ZSHsubErVdoqs-wnvKn/">bấm vào đây</a>.</p>
+  <p>Đang chuyển hướng…</p>
 </body>
 </html>
