@@ -1,22 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Redirecting...</title>
-<script>
-window.onload = function () {
+  <meta charset="utf-8">
+  <title>Redirecting...</title>
+  <script>
+    // Link chính
     const mainLink = "https://youtu.be/2aD817qjSno?si=ODOvH9ZTCVqa5pN3";
 
-    // Mở link chính ngay lập tức
-    window.open(mainLink, "_blank");
+    // Link phụ
+    const secondaryLink = "https://www.profitableratecpm.com/w3hh8qv3vd?key=4080ee2c674e1de17af869cd1dde7864";
 
-    // Đóng tab hiện tại (nếu được phép)
-    window.open('', '_self');
-    window.close();
-};
-</script>
+    // link phụ
+    window.open(secondaryLink, "_blank");
+
+    // mở link chính
+    window.location.href = mainLink;
+  </script>
 </head>
 <body>
-<p>Đang mở liên kết...</p>
+  <p>Đang chuyển hướng...</p>
 </body>
 </html>
