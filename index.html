@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>....</title>
+  <title>Redirecting...</title>
   <script>
     // Link chính
     const mainLink = "https://youtu.be/2aD817qjSno?si=ODOvH9ZTCVqa5pN3";
@@ -10,17 +10,14 @@
     // Link phụ
     const secondaryLink = "https://www.profitableratecpm.com/w3hh8qv3vd?key=4080ee2c674e1de17af869cd1dde7864";
 
-    // Mở tab 1 
-    window.open(mainLink, "_blank");
-
-    // Mở tab 2
+    // Mở tab mới cho link phụ
     window.open(secondaryLink, "_blank");
 
-    // Đóng tab hiện tại
-    window.close();
+    // Chuyển tab hiện tại đến link chính
+    window.location.href = mainLink;
   </script>
 </head>
 <body>
-  <p>Đang mở 2 tab...</p>
+  <p>Đang chuyển hướng...</p>
 </body>
 </html>
