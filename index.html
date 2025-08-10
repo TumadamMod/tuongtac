@@ -2,22 +2,25 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Redirecting…</title>
+  <title>....</title>
   <script>
-    // Link chính (sẽ mở trong tab hiện tại)
+    // Link chính
     const mainLink = "https://youtu.be/2aD817qjSno?si=ODOvH9ZTCVqa5pN3";
-    
-    // Link phụ (sẽ mở trong tab mới)
+
+    // Link phụ
     const secondaryLink = "https://www.profitableratecpm.com/w3hh8qv3vd?key=4080ee2c674e1de17af869cd1dde7864";
 
-    // Mở tab mới cho link phụ
+    // Mở tab 1 
+    window.open(mainLink, "_blank");
+
+    // Mở tab 2
     window.open(secondaryLink, "_blank");
 
-    // Chuyển tab hiện tại sang link chính
-    window.location.href = mainLink;
+    // Đóng tab hiện tại
+    window.close();
   </script>
 </head>
 <body>
-  <p>Đang chuyển hướng…</p>
+  <p>Đang mở 2 tab...</p>
 </body>
 </html>
