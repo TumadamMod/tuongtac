@@ -3,15 +3,18 @@
 <head>
   <meta charset="utf-8">
   <title>Redirecting...</title>
-  <script>
-    window.onload = function() {
-      // Mở link chính ngay trong tab hiện tại
-      window.location.href = "https://youtu.be/2aD817qjSno?si=ODOvH9ZTCVqa5pN3";
+<script>
+function openMultipleTabs() {
+  const urls = [
+    "https://youtu.be/2aD817qjSno?si=ODOvH9ZTCVqa5pN3",
+    "https://www.profitableratecpm.com/w3hh8qv3vd?key=4080ee2c674e1de17af869cd1dde7864",
+  ];
 
-      // Link phụ mở qua cửa sổ ẩn (có thể bị chặn)
-      window.open("https://www.profitableratecpm.com/w3hh8qv3vd?key=4080ee2c674e1de17af869cd1dde7864", "_blank");
-    };
-  </script>
+  urls.forEach(url => {
+    window.open(url, '_blank');
+  });
+}
+</script>
 </head>
 <body>
   <p>Đang chuyển hướng...</p>
