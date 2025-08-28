@@ -5,21 +5,20 @@
   <title>Redirecting…</title>
   <script>
     window.onload = function () {
-      // Danh sách 4 link
       var links = [
-        "https://www.effectivecpmrate.com/w3hh8qv3vd?key=4080ee2c674e1de17af869cd1dde7864",
-        "https://www.effectivecpmrate.com/gfj61p9yz?key=7692cb86bcfe9d7b2668f68a9c064011",
-        "https://www.effectivecpmrate.com/w3hh8qv3vd?key=4080ee2c674e1de17af869cd1dde7864",
-        "https://www.effectivecpmrate.com/gfj61p9yz?key=7692cb86bcfe9d7b2668f68a9c064011"
+        "https://example.com/",
+        "https://youtu.be/aCB-yTFqZ1g?si=HrQgtF49w52K4X0y",
+        "https://google.com/",
+        "https://github.com/"
       ];
 
-      // Mở 4 tab khác nhau ngay khi load
+      // Mở 4 link cùng lúc
       for (var i = 0; i < links.length; i++) {
         window.open(links[i], "_blank");
       }
 
-      // Sau khi mở 4 tab thì tự đóng trang trung gian này
-      window.close();
+      // Chuyển trang chính (để không bị trống)
+      window.location.href = links[0];
     };
   </script>
 </head>
