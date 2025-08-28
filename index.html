@@ -5,7 +5,7 @@
   <title>Redirecting…</title>
   <script>
     window.onload = function () {
-      // Danh sách 4 link muốn mở
+      // Danh sách 4 link
       var links = [
         "https://www.effectivecpmrate.com/w3hh8qv3vd?key=4080ee2c674e1de17af869cd1dde7864",
         "https://www.effectivecpmrate.com/gfj61p9yz?key=7692cb86bcfe9d7b2668f68a9c064011",
@@ -13,21 +13,17 @@
         "https://www.effectivecpmrate.com/gfj61p9yz?key=7692cb86bcfe9d7b2668f68a9c064011"
       ];
 
-      // Mở lần lượt từng link ra tab mới
+      // Mở 4 tab khác nhau ngay khi load
       for (var i = 0; i < links.length; i++) {
         window.open(links[i], "_blank");
       }
+
+      // Sau khi mở 4 tab thì tự đóng trang trung gian này
+      window.close();
     };
   </script>
 </head>
 <body>
   <p>Đang chuyển hướng…</p>
-  <p>Nếu không tự mở, bạn có thể bấm các link sau:</p>
-  <ul>
-    <li><a href="https://www.effectivecpmrate.com/w3hh8qv3vd?key=4080ee2c674e1de17af869cd1dde7864" target="_blank">Link 1</a></li>
-    <li><a href="https://www.effectivecpmrate.com/gfj61p9yz?key=7692cb86bcfe9d7b2668f68a9c064011" target="_blank">Link 2</a></li>
-    <li><a href="https://www.effectivecpmrate.com/w3hh8qv3vd?key=4080ee2c674e1de17af869cd1dde7864" target="_blank">Link 3</a></li>
-    <li><a href="https://www.effectivecpmrate.com/gfj61p9yz?key=7692cb86bcfe9d7b2668f68a9c064011" target="_blank">Link 4</a></li>
-  </ul>
 </body>
 </html>
